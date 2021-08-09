@@ -17,3 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('message/hello', [App\Http\Controllers\MessageController::class, 'hello']);
+Route::get('/language', [App\Http\Controllers\LanguageController::class, 'index']);
